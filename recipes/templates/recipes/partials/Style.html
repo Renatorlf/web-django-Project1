@@ -20,13 +20,13 @@
         :root{
             --color-primary :#269fe6 ;
             --color-primary-hover :#2086c2 ;
-            --cor-primária-escura :#13141f ;
+            --color-primary-black :#13141f ;
             --color-primary-dark-hover:#212336 ;
             --color-primary-light :#d4ecfa ;
             --color-primary-light-hover :#bdd8e7 ;
 
-            --cor-white :  #fff ;
-            --cor-preto:  #000 ;
+            --color-white: #ffffff ;
+            --color-preto:  #000000 ;
 
             --color-dark-texto:  #444 ;
             --color-info-light:  #cce5ff ;
@@ -40,7 +40,7 @@
             --color-debug-dark: #4d86c4 ;
             --color-sucesso-escuro: #4a9c5d ;
             --color-alert-escuro: #927f40 ;
-            --color-warning-dark: #927f40 ;
+            --color-warning-dark: #a78a2d ;
             --color-error-dark: #da525d ;
 
             --color-cinza-0: #f9f9f9 ;
@@ -75,6 +75,7 @@
             background: var(--color-cinza-1);
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            color: var(--color-dark-texto);
         }
 
         h1,h2,h3,h4,h5,h6{
@@ -88,12 +89,12 @@
         }
 
         .main-header-container{
-            background: var(--cor-primária-escura);
+            background: var(--color-primary-black);
         }
 
         .main-logo{
             font-size: 4rem;
-            color: var(--cor-white);
+            color: var(--color-white);
             text-decoration: none;
             display: flex;
             flex-flow: row nowrap;
@@ -148,11 +149,131 @@
 
         .search-form:focus-within{
             border-color: var(--color-primary) ;
-            background: var(--cor-white);
+            background: var(--color-white);
         }
+
 
         .search-form:focus-within .search-button{
             color: var(--color-primary) ;
         }
-    </style>
+        
+        .main-content-container{
+            padding: 20px;
+    
+        }
+
+        .main-content{
+            padding-top: 0;
+        }
+
+        .main-content-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large)
+        }
+
+        .recipe{
+            background-color: var(--color-white);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, .3);
+            transition: all 300ms ease-in-out;
+            transform: scale(1);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .recipe img{
+            max-width: 100%;
+        }
+
+        .recipe-list-intem{
+            max-width: 64rem;
+        }
+
+        .recipe-list-intem:hover{
+            transform: scale(1.01);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, .6);
+        }
+
+        .recipe-title-container{
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
+        }
+
+        .recipe-autor{
+            padding: 0 var(--spacing-gutter-medium);
+        }
+
+        .recipe-content{
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+
+        .recipe-autor-item{
+            color: var(--color-alert-escuro);
+            margin-right: 1rem;
+        }
+
+        .recipe-autor a{
+            color: var(--color-primary);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .recipe-autor a:hover{
+            color: var(--color-primary-dark-hover);
+        }
+
+        .recipe-meta-container{
+            display: flex;
+            flex-flow:row wrap;
+            padding: var(--spacing-gutter-medium);
+            background: var(--color-cinza-1);
+        }
+
+        .recipe-meta{
+            display: flex;
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .recipe-meta-title{
+            font-size: 2rem;
+        }
+
+        .recipe-footer a{
+            background: var(--color-primary-dark-hover);
+            display: block;
+            color: var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 1rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+
+        .recipe-footer a:hover{
+            filter: brightness(1.7);
+        }
+
+        .main-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark-hover);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
+
+        .main-footer a{
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .main-footer a:hover{
+            filter: brightness(.8);
+        }
+
+    </style>    
 </head>
