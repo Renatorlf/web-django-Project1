@@ -1,43 +1,43 @@
 
 :root{
-    --color-primary :#269fe6 ;
-    --color-primary-hover :#2086c2 ;
-    --color-primary-black :#13141f ;
-    --color-primary-dark-hover:#212336 ;
-    --color-primary-light :#d4ecfa ;
-    --color-primary-light-hover :#bdd8e7 ;
+    --color-primary: #269fe6;
+    --color-primary-hover: #2086c2;
+    --color-primary-black: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
 
-    --color-white: #ffffff ;
-    --color-preto:  #000000 ;
+    --color-white: #ffffff;
+    --color-preto:  #000000;
 
-    --color-dark-texto:  #444 ;
-    --color-info-light:  #cce5ff ;
-    --color-debug-light:  #cce5ff ;
-    --color-success-light:  #d4edda ;
-    --color-alert-light:  #fff3cd ;
-    --color-warning-light:  #fff3cd ;
-    --color-error-light:  #f8d7da ;
+    --color-dark-texto:  #444;
+    --color-info-light:  #cce5ff;
+    --color-debug-light:  #cce5ff;
+    --color-success-light:  #d4edda;
+    --color-alert-light:  #fff3cd;
+    --color-warning-light:  #fff3cd;
+    --color-error-light:  #f8d7da;
 
-    --color-info-escuro: #4d86c4 ;
-    --color-debug-dark: #4d86c4 ;
-    --color-sucesso-escuro: #4a9c5d ;
-    --color-alert-escuro: #927f40 ;
-    --color-warning-dark: #a78a2d ;
-    --color-error-dark: #da525d ;
+    --color-info-escuro: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-sucesso-escuro: #4a9c5d;
+    --color-alert-escuro: #927f40;
+    --color-warning-dark: #a78a2d;
+    --color-error-dark: #da525d;
 
-    --color-cinza-0: #f9f9f9 ;
-    --color-cinza-1: #e0e0e0 ;
-    --color-cinza-2: #c7c7c7 ;
-    --color-cinza-3: #aeaeae ;
-    --color-cinza-4: #959595 ;
-    --color-cinza-5: #7d7d7d ;
-    --color-cinza-6: #646464 ;
-    --color-cinza-7: #4b4b4b ;
-    --color-cinza-8: #323232 ;
-    --color-cinza-9: #191919 ;
+    --color-cinza-0: #f9f9f9;
+    --color-cinza-1: #e0e0e0;
+    --color-cinza-2: #c7c7c7;
+    --color-cinza-3: #aeaeae;
+    --color-cinza-4: #959595;
+    --color-cinza-5: #7d7d7d;
+    --color-cinza-6: #646464;
+    --color-cinza-7: #4b4b4b;
+    --color-cinza-8: #323232;
+    --color-cinza-9: #191919;
 
     --font-primary: sans-serif;
-    --font-headings: 'Roboto Slab' , serif;
+    --font-headings: 'Roboto Slab', serif;
 
     --spacing-gutter-medium: 3rem ;
     --spacing-gutter-large: 4rem ;
@@ -100,8 +100,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
     border-radius: .4rem;
     position: relative;
-    transition: 400ms ease-in-out;
-    
+    transition: 400ms ease-in-out;   
 }
 
 .search-input, .search-button{
@@ -141,7 +140,6 @@ h1,h2,h3,h4,h5,h6{
 
 .main-content-container{
     padding: 20px;
-
 }
 
 .main-content{
@@ -172,8 +170,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .recipe-list-intem:hover{
-    transform: scale(1.01);
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, .6);
+    transform: scale(1.02);
+    box-shadow: -8px 8px 18px rgba(7, 7, 7, 0.856);
 }
 
 .recipe-title-container{
@@ -236,6 +234,16 @@ h1,h2,h3,h4,h5,h6{
 
 .recipe-footer a:hover{
     filter: brightness(1.7);
+}
+
+.main-content-detail .recipe-list-intem{
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .recipe-list-intem:hover{
+    transform: scale(1);
+    box-shadow: -8px 8px 18px rgba(0, 0, 0, .25);
 }
 
 .main-footer{

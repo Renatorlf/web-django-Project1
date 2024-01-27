@@ -1,11 +1,8 @@
 from django.urls import path
-from recipes.views import home
+from . import views #O ponto indica a pasta que você esta no caso é 'recipes'
 
 
 urlpatterns = [
-    path('', home), #Home
-    
-    #exeplos de lincagem da url como a views
-    #path('sobre/', sobre), #/sobre/ 
-    #path('contato/', contato) #/contato/
+    path('', views.home), 
+    path('recipes/<int:id>/', views.recipe),
 ]
